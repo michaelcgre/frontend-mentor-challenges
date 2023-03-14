@@ -1,0 +1,218 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  font-family: "Red Hat Display", Helvetica;
+}
+
+.logo {
+  padding: 2rem 0;
+}
+
+.for-everyone img {
+  width: 100vw;
+}
+
+@media (min-width: 1008px) {
+  .mobile-pic {
+    display: none;
+  }
+
+  .left-pic{
+    background-repeat: no-repeat;
+    width: 26vw;
+    background-image: url(./assets/desktop/image-hero-left.png);
+  }
+
+  .right-pic {
+    background-repeat: no-repeat;
+    width: 25.5vw;
+    background-image: url(./assets/desktop/image-hero-right.png);
+  }
+
+  .desktop-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.for-everyone h1 {
+  font-size: 2rem;
+}
+
+.for-everyone p {
+  max-width: 45ch;
+  display: inline-block;
+}
+
+.for-everyone button {
+  font-size: 1.1rem;
+  padding: .7rem 2rem;
+  margin: .5rem;
+  color: #ffffff;
+  border: transparent;
+}
+
+.button-one {
+  background-color: hsl(192, 37%, 48%);
+  border-radius: 10% / 60%;
+}
+
+.button-one span {
+  color: hsl(192, 100%, 86%);
+}
+
+.button-one:hover {
+  background-color: hsl(192, 90%, 77%);
+  cursor: pointer;
+}
+
+.button-two {
+  background-color: hsl(268, 34%, 53%);
+  border-radius: 10% / 60%;
+}
+
+.button-two:hover {
+  background-color: hsl(268, 100%, 86%);
+  cursor: pointer;
+}
+
+.four-pics {
+  margin-bottom: 3rem;
+}
+
+.inner-pics {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.four-pics img {
+  width: 9.3rem;
+  height: 9rem;
+  margin: .5rem 0;
+  border-radius: 3%;
+}
+
+@media (min-width:1008px) {
+  .four-pics img {
+    margin: .5rem -8rem;
+  }
+}
+
+.smarter-meetings span {
+  color: hsl(192, 37%, 48%);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.smarter-meetings h2 {
+  font-size: 1.9rem;
+  margin: 0 2rem;
+  font-family: 500;
+  margin-top: 1rem;
+}
+
+.smarter-meetings p {
+  color: hsl(240, 10%, 57%);
+  max-width: 55ch;
+  display: inline-block;
+}
+
+.footer {
+  background-image: url("./assets/mobile/image-footer.jpg");
+  background-color: hsl(192, 37%, 48%);
+  background-blend-mode: multiply;
+  padding: 4rem 0;
+  width: 100vw;
+  background-size: cover;
+  color: #ffffff;
+  height: 25rem;
+}
+
+@media (min-width:1008px) {
+ .footer {
+  background-image: url("./assets/desktop/image-footer.jpg");
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+  align-items: center;
+ }
+
+ .footer h2 {
+  width: 12ch;
+  text-align: left;
+ }
+
+ .footer p {
+  width: 19rem;
+  text-align: left;
+ }
+
+}
+
+.footer p {
+  font-weight: 500;
+  margin: 3rem 2rem;
+}
+
+.footer button {
+  background-color: hsl(268, 34%, 53%);
+  padding: 0rem 2rem;
+  border-radius: 10% / 60%;
+  border: transparent;
+  color: white;
+  font-weight: 550;
+  font-size: 1.2rem;
+  height: 3rem;
+}
+
+.footer button:hover {
+  background-color: hsl(268, 100%, 86%);
+  cursor: pointer;
+}
+
+.footer span {
+  color: hsl(268, 30%, 86%);
+}
+
+.separator {
+  margin: 3rem 0
+}
+
+.separator p {
+  border: 2px solid lightgrey;
+  width: 2ch;
+  display: inline;
+  border-radius: 100%;
+  padding: .3rem .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(240, 10%, 57%);
+  background-color: #ffffff;
+}
+
+.separator-two {
+  position: relative;
+  top: 3.8rem;
+}

@@ -1,0 +1,82 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+body {
+  font-family: "Kumbh Sans";
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-bottom.svg);
+  margin: 0 1.5rem;
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+  max-width: 327.2px;
+}
+
+.user-img {
+  position: absolute;
+  bottom: 50.1%;
+  left: 36%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+main {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.user {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+  display: grid;
+  gap: .3rem;
+}
+
+.user p {
+  color: hsl(0, 0%, 59%);
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+.age {
+  margin-left: .7rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin:  1rem 3rem;
+}

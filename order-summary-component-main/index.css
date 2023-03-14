@@ -1,0 +1,154 @@
+:root {
+    --clr-primary-200: hsl(225, 100%, 94%);
+    --clr-secondary-600: hsl(245, 75%, 52%);
+    --clr-secondary-500: hsl(251, 71%, 66%);
+
+    --clr-neutral-300: hsl(225, 100%, 98%);
+    --clr-neutral-400: hsl(224, 23%, 55%);
+    --clr-neutral-900: hsl(223, 47%, 23%);
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder:900;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Broad Styles */
+body {
+    font-family: "Red Hat Display";
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-400);
+
+    background-color: var(--clr-primary-200);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    margin: 2rem;
+}
+
+.order-summary {
+    --content-padding: 2rem;
+    --content-spacing: 1rem;
+
+    display: grid;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8% / 5%;
+    max-width: 375px;
+}
+
+.text-card {
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+    text-align: center;
+}
+
+.purchase-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Narrow Styles */
+.summary-title {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.purchase-flex {
+    background-color: var(--clr-neutral-300);
+    padding: 1rem .5rem;
+    border-radius: 4% / 10%;
+}
+
+.purchase-description {
+    font-size: .85rem;
+    margin-right: 1rem;
+}
+
+.purchase-name {
+    color: #000;
+    font-weight: var(--fw-bold);
+}
+
+.change-btn {
+    background-color: transparent;
+    border: transparent;
+    color: var(--clr-secondary-600);
+    text-decoration: underline;
+    font-size: 0.8rem;
+    font-weight: var(--fw-bold);
+}
+
+.change-btn:hover {
+    color: var(--clr-secondary-500);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.payment-btn {
+    padding: .5rem 0;
+    color: #fff;
+    background-color: var(--clr-secondary-600);
+    border-radius: 4% / 20%;
+    border: transparent;
+    font-weight: var(--fw-bold);
+}
+
+.payment-btn:hover {
+    background-color: var(--clr-secondary-500);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-neutral-400);
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    color: #000;
+}

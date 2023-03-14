@@ -1,0 +1,183 @@
+:root {
+    --clr-primary-700: hsl(179, 62%, 43%);
+    --clr-primary-500: hsl(179, 62%, 48%);
+    --clr-secondary-600: hsl(71, 73%, 54%);
+
+    --crl-neutral-100: hsl(204, 43%, 93%);
+    --crl-neutral-300: hsl(218, 22%, 67%);
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+body {
+  font-family: "Karla";
+  font-weight: var(--fw-normal);
+
+  margin: 2rem;
+  background-color: var(--crl-neutral-100);
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+  padding: 1.8rem 1.5rem;
+}
+
+p {
+  font-size: .85rem;
+}
+
+.container-two,
+.container-three {
+  color: #fff;
+}
+
+.container-one {
+  background-color: #fff;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+.container-one h1 {
+  color: var(--clr-primary-700);
+  font-size: 1.34rem;
+}
+
+.container-one span {
+  color: var(--clr-secondary-600);
+  font-weight: var(--fw-bold);
+}
+
+.container-one p {
+  color: var(--crl-neutral-300);
+  line-height: 1.8rem;
+}
+
+.container-two {
+  background-color: var(--clr-primary-700);
+}
+
+.container-two  h2 {
+  font-size: 1.2rem;
+}
+
+.subscription-price {
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.per-month {
+  font-size: 1rem;
+  position: relative;
+  bottom: .4rem;
+  font-weight: var(--fw-normal);
+  opacity: .7;
+}
+
+.sub-description {
+  font-size: 1rem;
+}
+
+.container-two button {
+  padding: .9rem 0 .7rem;
+  background-color: var(--clr-secondary-600);
+  border: transparent;
+  border-radius: 2% / 10%;
+  color: #fff;
+  font-weight: var(--fw-bold);
+  align-items: center;
+  box-shadow: 0px 10px 10px 5px hsl(179, 62%, 40%);
+}
+
+.container-three {
+  background-color: var(--clr-primary-500);
+  border-bottom-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.container-three ul {
+  padding: 0;
+}
+
+.container-three li {
+  list-style-type: none;
+  opacity: .8;
+}
+
+@media (min-width: 550px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    place-content: center;
+    
+  }
+
+  section {
+    padding: 2.5rem 2.5rem;
+  }
+
+  .container-one {
+    grid-column: span 2;
+    min-height: 14rem;
+    border-top-left-radius: 10% / 20%;
+    border-top-right-radius: 10% / 20%;
+  }
+
+  .container-one p {
+    position: relative;
+    bottom: .5rem;
+    font-size: 1rem;
+  }
+
+  .container-two {
+    border-bottom-left-radius: 3%;
+  }
+
+  .monthly-sub-description {
+    position: relative;
+    bottom: .5rem;
+  }
+
+  .container-three {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 3%;
+  }
+
+}

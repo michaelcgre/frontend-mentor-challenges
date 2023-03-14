@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desktop-flex .desktop-img {
+    display: none;
+}
+
+.email-submit .error-icon {
+    display: none;
+    position: absolute;
+    background: none;
+    margin-left: 3rem;
+    margin-top: .4rem;
+}
+
+.main-container header img {
+    margin: 3rem 0 3rem 3rem ;
+}
+
+.mobile-img {
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+main span {
+    font-weight: 400;
+    color: #000000;
+}
+
+main p {
+    line-height: 1.5rem;
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 1.5rem;
+}
+
+.email-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.email-submit input {
+    height: 2.5rem;
+    width: 65vw;
+    padding: 0 2rem;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 7% / 50%;
+    align-items: center;
+    font-family: "Josefin Sans";
+}
+
+.email-submit input:focus {
+    outline: none;
+}
+
+.email-submit .submit-btn {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    object-fit: contain;
+    padding: 0 1.5rem;
+    border-radius: 30% / 50%;
+    margin-left: -3.5rem;
+}
+
+.email-submit .submit-btn:hover {
+    background-image: linear-gradient(135deg, hsl(0, 40%, 80%), hsl(0, 50%, 90%));
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 36%, 70%);
+}
+
+@media (min-width: 768px) {
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-flex .desktop-img {
+        display: inline-block;
+        overflow: hidden;
+        height: 100vh;
+        
+        object-fit: contain;
+    }
+    .desktop-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container main {
+        width: 50vw;
+        overflow: hidden;
+    }
+
+    main h1 {
+        max-width: 6ch;
+        font-size: 4rem;
+        
+    }
+
+    main p {
+        max-width: 45ch;
+    }
+
+    .email-submit {
+        max-width: 25vw;
+    }
+
+}
+
+@media (min-width: 420px) {
+    .email-submit .error-icon {
+        margin-left: 7rem;
+    }
+}
+
+@media (min-width: 504px) {
+    .email-submit .error-icon {
+        margin-left: 10rem;
+    }
+}
+
+@media (min-width: 603px) {
+    .email-submit .error-icon {
+        margin-left: 15rem;
+    }
+}
+
+@media (min-width: 739px) {
+    .email-submit .error-icon {
+        margin-left: 19.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .email-submit .error-icon {
+        margin-left: 3rem;
+    }
+}
+
+@media (min-width: 975px) {
+    .email-submit .error-icon {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 1227px) {
+    .email-submit .error-icon {
+        margin-left: 9.5rem;
+    }
+}
+
+@media (min-width: 1494px) {
+    .email-submit .error-icon {
+        margin-left: 14rem;
+    }
+}
+
+
