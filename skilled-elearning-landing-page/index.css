@@ -1,0 +1,261 @@
+:root {
+    --clr-primary-400: hsl(234, 25%, 52%);
+    --clr-primary-800: hsl(233, 54%, 16%);
+    --clr-secondary-200: hsl(341, 100%, 83%);
+    --clr-secondary-500: hsl(341, 92%, 62%);
+
+    --clr-neutral-300: hsl(232, 10%, 56%);
+
+    --clr-radiant-1: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+    --clr-radiant-2: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder:800;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+}
+
+/* General styles */
+main {
+    background-image: linear-gradient(hsl(0, 0%, 100%) 65%, hsl(234, 25%, 85%));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: var(--fw-regular);
+
+    display: grid;
+    margin: rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.description-text {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.sections-grid {
+    display: grid;
+    margin: 1rem;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 0 1rem;
+    margin: 3rem 0;
+    border-radius: 5% / 8%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-primary-800);
+    padding: 2rem 1rem;
+}
+
+button {
+    padding: .5rem 1rem;
+    border: transparent;
+    font-weight: var(--fw-bold);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: var(--fw-bolder);
+    max-width: 15ch;
+}
+
+p {
+    color: var(--clr-neutral-300);
+}
+
+h2 {
+    background-image: var(--clr-radiant-1);
+    border-radius: 4% / 10%;
+    font-weight: var(--fw-bolder);
+    color: #fff;
+    max-height: 15rem;
+}
+
+h3 {
+    font-weight: var(--fw-bolder);
+}
+
+/* Narrow styles */
+header button {
+    background-color: var(--clr-primary-800);
+    color: #fff;
+    border-radius: 15% / 50%;
+}
+
+header button:hover {
+    background-color: var(--clr-primary-400);
+}
+
+.description-text p {
+    max-width: 33ch;
+}
+
+.description-text button {
+    max-width: 10rem;
+    border-radius: 10% / 50%;
+    background-image: var(--clr-radiant-1);
+    color: #fff;
+    max-height: 3rem;
+}
+
+.description-text button:hover {
+    background-image: linear-gradient(hsl(13, 100%, 80%), hsl(322, 87%, 70%))
+}
+
+picture img {
+    width: 100vw;
+}
+
+.sections-grid h2 {
+    padding: 2rem 0 2rem 1rem;
+}
+
+section img {
+    position: relative;
+    bottom: 1.6rem;
+}
+
+section h3 {
+    position: relative;
+    bottom: 1.6rem;
+}
+
+section p {
+    position: relative;
+    bottom: 1.6rem;
+}
+
+section button {
+    max-width: 10rem;
+    background-color: transparent;
+    color: var(--clr-secondary-500);
+    position: relative;
+    right: 2rem;
+    bottom: 1.6rem;
+    padding: 0 0;
+}
+
+section button:hover {
+    color: var(--clr-secondary-200);
+}
+
+footer button {
+    background-color: transparent;
+    border: transparent;
+    background-image: var(--clr-radiant-2);
+    color: #fff;
+    border-radius: 15% / 50%;
+}
+
+footer button:hover {
+    background-image: linear-gradient(hsl(237, 100%, 74%), hsl(322, 87%, 65%))
+}
+
+/* Responsive Design */
+@media (min-width:768px) {
+    .body {
+        font-size: 18px;
+    }
+    .description-grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        object-fit: fill;
+        overflow: inherit;
+    }
+
+    .sections-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .sections-grid h2 {
+        align-items: center;
+        font-size: 2.2rem;
+        border-radius: 5% / 8%;
+    }
+
+    .description-text {
+        margin-left: 4rem;
+    }
+
+    section {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:999px) {
+    .sections-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin: 0 8rem;
+    }
+
+    section p {
+        max-width: 29ch;
+    }
+
+    .description-text {
+        margin-left: 8rem;
+    }
+
+    .description-text p {
+        font-size: 1.5rem;
+    }
+
+}

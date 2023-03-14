@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+main {
+    margin: 5rem 1rem;
+    width: 23rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        align-content: center;
+    }
+}
+
+.imgcard {
+    background-image: url(./images/image-header-mobile.jpg);
+    height: 17rem;
+    background-size: cover;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply; 
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+@media (min-width: 768px) {
+    .desktopimg {
+        background-image: url(./images/image-header-desktop.jpg);
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+        width: 36rem;
+        height: 29rem;
+    }
+}
+
+.textcard {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: hsl(244, 38%, 16%);
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+@media (min-width: 768px) {
+    .textcard {
+        width: 60ch;
+        padding: 2rem 4rem;
+        text-align: left;
+        padding-bottom: 0;
+        border-bottom-left-radius: 5%;
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.description h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:white;
+}
+
+.description {
+    font-family: Inter;
+}
+
+.description p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin: 0 .5rem;
+    color: lightgray;
+}
+
+@media (min-width: 768px) {
+    .description p {
+        font-size: .8rem;
+        line-height: 1.5rem;
+        width: 40ch;
+    }
+}
+
+.description span {
+    color:hsl(277, 64%, 61%);
+}
+
+@media (min-width: 768px) {
+    .categories {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 4rem;
+    }
+}
+
+.categories strong {
+    font-size: 2rem;
+    font-family: Inter;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .categories strong {
+        font-size: 1.5rem;
+    }
+}
+
+.categories span {
+    text-transform: uppercase;
+    font-family: "Lexend Deca";
+    color: lightgray;
+}
+
+@media (min-width: 768px) {
+    .categories span {
+        font-size: .8rem;
+    }
+}
+
+.categories p {
+    margin: 2rem 0;
+}
